@@ -24,3 +24,8 @@
             border-color: rgba(255,102,203, 0.5);
         }
 
+
+.carousel {
+    width: 60%;
+    margin:auto;
+}
