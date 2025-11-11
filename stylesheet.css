@@ -1,0 +1,26 @@
+.navbar-custom {
+    background-color: rgba(41, 14, 162, 0.9);
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text{
+    color: rgba(232, 238, 243, 0.8);
+}
+
+/* linkin väri */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(223, 224, 228, 0.8);
+}
+
+/* aktiivisen & hover-linkin väri */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #648dcf;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(223, 224, 228, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+            border-color: rgba(255,102,203, 0.5);
+        }
+
