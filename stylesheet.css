@@ -1,3 +1,10 @@
+body p{
+    text-align: center;
+    font-family: Verdana;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 .navbar-brand img {
   height: 50px;           /* pienennä korkeutta */
   width: auto;            /* säilyttää kuvasuhteen */
@@ -40,13 +47,18 @@
 
 
 .carousel {
-    width: 60%;
+    width: 70%;
     margin:auto;
+    padding-bottom: 20px;
 }
 .carousel-caption {
     background-color: rgba(223, 224, 228, 0.8);
     color:darkblue
 }
-body {
-    background-color: #d2e3ed;
+
+.container .col-md-4 img{
+    width: 100%;   
+}
+#kuva2 {
+    margin-right:0;
 }
