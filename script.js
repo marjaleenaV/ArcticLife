@@ -1,0 +1,29 @@
+function lomake() {
+    let nimi = document.getElementById("nimi").value;
+    let sposti = document.getElementById("email").value;
+    let radiob = document.getElementsByName("lisaa");
+    let boxit = document.getElementsByName("tama");
+   let valikko = document.getElementById("tieto").selectedIndex;
+    let valikonValinta = document.getElementById("tieto").options;
+    
+    let muuttuja = "Toivoisit lisää: ";
+    let muuttuja2 = "Ajattelet sivusta: ";
+    let valinta = "Löysitkö etsimäsi: ";
+
+    for (let i = 0, length = radiob.length; i < length; i++) {
+        if (radiob[i].checked) {
+            muuttuja += radiob[i].value;
+        break;
+        }
+    }
+    for (let i = 0, length = boxit.length; i < length; i++) {
+        if (boxit[i].checked) {
+            muuttuja2 += boxit[i].value +",";
+        
+        }
+    }
+    valinta += valikonValinta[valikko].text;
+
+    document.getElementById("vastaus").innerHTML="Hei "+nimi+",<br> sähköpostiosoitteesi on " +sposti+ ".<br>" +muuttuja + ".<br>"+ muuttuja2+ ".<br>" + valinta;
+
+}
