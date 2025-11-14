@@ -7,12 +7,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="stylesheet.css" rel="stylesheet">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <!--navipalkki alkaa-->
-<nav class="navbar navbar-expand-sm navbar-custom">
+<nav class="navbar navbar-expand-sm navbar-custom poppins-semibold">
   <div class="container-fluid">
     <!--brändin nimi ja logo-->
-    <a class="navbar-brand navbar-text" href="#"><img src="logo.jpeg" alt="Logo"></a>
+    <a class="navbar-brand navbar-text" href="#"><img src="logo.jpeg" alt="Logo">Elämää jäällä</a>
     <!--mobiili navigointi eli hampurilaisvalikko-->
     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -22,14 +22,11 @@
       <ul class="navbar-nav">
         <!--yksittäinen linkki-->
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#demo">Etusivu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#arktis">Arktis</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>  
         <!--alasvetovalikko-->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
@@ -39,13 +36,16 @@
             <li><a class="dropdown-item" href="#">A third link</a></li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>  
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+<div id="demo" class="carousel slide poppins-regular" data-bs-ride="carousel">
 
   <!-- Indicators/dots -->
   <div class="carousel-indicators">
@@ -97,7 +97,7 @@
 </div>
 
 <!--grid, eli kolmesarakkeinen osio sivustolla-->
-<div class="container">    
+<div class="container poppins-regular" id="arktis">    
 <div class="row">
 <div class="col-md-4"><img id="kuva1" src="maisema1.jpg">Kuva <a href="https://pixabay.com/fi/users/per804-874554/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5126442">Per Løvstad</a> Pixabaystä</div>
 <div class="col-md-4"><p>Arktinen alue eli Arktis tarkoittaa maapallon pohjoisimpia alueita. Tavallisesti arktiseen alueeseen katsotaan kuuluvan pohjoisnapaa ympäröivä Pohjoinen jäämeri ja osia Kanadasta, Grönlannista, Venäjästä, Alaskasta ja Pohjoismaista.</p>
@@ -105,7 +105,8 @@
 <div class="col-md-4"><img id="kuva2" src="lappi.jpg">Kuva <a href="https://pixabay.com/fi/users/aileino-1030590/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=993002">AI Leino</a> Pixabaystä</div>
 </div> 
 </div>
-<div>
+<!--Palautelomake-->
+<div class="poppins-regular">
   <form onsubmit="return false">
   <label for ="nimi">Nimi:</label><br>
 <input type="text" id="nimi" size="20" required maxlength="50"><br>
