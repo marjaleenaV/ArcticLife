@@ -44,3 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("shown.bs.tab", function (event) {
+  const iframe = event.target.parentNode.querySelector("iframe");
+  if (iframe) {
+    const src = iframe.src;
+    iframe.src = src; // resetoi videon oikeaan kokoon
+  }
+});
