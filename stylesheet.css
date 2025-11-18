@@ -117,21 +117,8 @@ body p{
   color: aliceblue;
   
 }
-.haitariteksti {
-  width: 100%;
-  flex: 1;
-}
-.accordion-body img {
-  width: 20%;
-  flex: 2;
-  
-}
-.accordion-body {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
 
-}
+
 /*lomake*/
 .lomake {
   margin-left: 10%;
