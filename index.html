@@ -9,7 +9,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <!--navipalkki alkaa-->
-<nav class="navbar navbar-expand-sm navbar-custom fixed-top poppins-semibold">
+<nav class="navbar navbar-expand-md navbar-custom fixed-top poppins-semibold">
   <div class="container-fluid">
     <!--brändin nimi ja logo-->
     <a class="navbar-brand navbar-text" href="#"><img src="logo.jpeg" alt="Logo">Elämää jäällä</a>
@@ -42,6 +42,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#videoita">Videoita</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#palaute">Anna palautetta</a>
         </li>  
       </ul>
     </div>
@@ -259,7 +262,7 @@ Sarvivalaan näkyvin tuntomerkki on koiraiden kierteinen syöksyhammas, joka on 
 
 
 <!--Palautelomake-->
-<div class="formi container-fluid">
+<div class="formi container-fluid" id="palaute">
   <h2 id="lomakkeenOtsikko">Anna palautetta sivustosta</h2>
 <div class="poppins-regular row justify-content-center">
   <form onsubmit="return false" class="col-md-4 lomake m-4">
@@ -306,7 +309,7 @@ Sarvivalaan näkyvin tuntomerkki on koiraiden kierteinen syöksyhammas, joka on 
 
 <input type="submit" value="Lähetä" onclick="lomake()">
 </form>
-<div class="vastaus col-md-4 m-4 align-items-center d-flex justify-content-center">
+<div class="vastaus col-md-4 m-4 align-items-center d-flex justify-content-center placeholder-box">
   <div id="vastaus"></div>
 </div>
 </div>

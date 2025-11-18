@@ -6,6 +6,7 @@ body p{
     font-family: Verdana;
     margin-bottom: 20px;
     position: relative; 
+    padding-top: 140px;
 }
 .navbar-brand img {
   height: 50px;           /* pienennä korkeutta */
@@ -46,7 +47,7 @@ body p{
     color: #99ddec;
 }
 .nav-link.active {
-	  color: #9ee5f8 !important;
+	  color: #457ec0 !important;
 	}
 
 
@@ -69,6 +70,7 @@ body p{
     width: 70%;
     margin:auto;
     padding-bottom: 40px;
+    margin-top: 80px
    
     
 }
