@@ -227,7 +227,7 @@ Sarvivalaan näkyvin tuntomerkki on koiraiden kierteinen syöksyhammas, joka on 
 
 <div class="container mt-3" id="taulukko">
   <h2>Lajien elinvoimaisuus</h2>
-  <p>Ilmastonmuutoksen myötä pohjoiset jääalueet ovat alkaneet sulamaan ja kylmien alueiden eläinlajien elialueat pienenevät. Allaolevassa taulukossa näet lajien tämän hetkisen tilanteen. </p>            
+  <p>Ilmastonmuutos on johtanut useiden kylmien alueiden eläinlajien elinalueen lämpenemiseen ja siksi osa osan lajeista tilanne on vaarantunut.</p>            
   <table class="table table-hover">
     <thead>
       <tr>
@@ -238,29 +238,31 @@ Sarvivalaan näkyvin tuntomerkki on koiraiden kierteinen syöksyhammas, joka on 
     </thead>
     <tbody>
       <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <td>Afrikanpingviini</td>
+        <td>Äärimmäisen uhanalainen</td>
+        <td>n. 19 800</td>
       </tr>
       <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
+        <td>Jääkarhu</td>
+        <td>Vaarantunut</td>
+        <td>n. 26 000</td>
       </tr>
       <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+        <td>Mursu</td>
+        <td>Vaarantunut</td>
+        <td>n. 200 000</td>
       </tr>
+
     </tbody>
   </table>
 </div>
 
 
 <!--Palautelomake-->
-<div class="lomake">
-<div class="poppins-regular">
-  <form onsubmit="return false">
+<div class="formi container-fluid">
+  <h2 id="lomakkeenOtsikko">Anna palautetta sivustosta</h2>
+<div class="poppins-regular row">
+  <form onsubmit="return false" class="col-md-4 lomake">
   <label for ="nimi">Nimi:</label><br>
 <input type="text" id="nimi" size="20" required maxlength="50"><br>
 <label for="email">Sähköposti:</label><br>
@@ -270,7 +272,7 @@ Sarvivalaan näkyvin tuntomerkki on koiraiden kierteinen syöksyhammas, joka on 
 <label for="viesti">Viesti:</label><br>
 <textarea id="viesti"></textarea>
 <!--radiobutton-->
-<div>Mitä haluaisit sivustolle lisää?</div>
+<div><strong>Mitä haluaisit sivustolle lisää?</strong></div>
 <label>
   <input type="radio"  name="lisaa" value="Kuvia">Kuvia
 </label><br>
@@ -281,7 +283,7 @@ Sarvivalaan näkyvin tuntomerkki on koiraiden kierteinen syöksyhammas, joka on 
   <input type="radio"  name="lisaa" value="Videoita">Videoita
 </label><br>
 <!--checkboxit-->
-<div>Mitä ajatuksia sivusto herättää?</div>
+<div><strong>Mitä ajatuksia sivusto herättää?</strong></div>
 <label>
   <input type="checkbox"  name="tama" value="kiinnostavaa">Kiinnostavaa
 </label><br>
@@ -292,7 +294,7 @@ Sarvivalaan näkyvin tuntomerkki on koiraiden kierteinen syöksyhammas, joka on 
   <input type="checkbox"  name="tama" value="muuta">Jotain muuta
 </label>
 <!--Alasvetovalikko-->
-<div>Löysitkö etsimäsi:</div>
+<div><strong>Löysitkö etsimäsi:</strong></div>
 <select id="tieto">
   <option value="tyhjä"></option>
   <option value="en">En</option>
@@ -304,7 +306,7 @@ Sarvivalaan näkyvin tuntomerkki on koiraiden kierteinen syöksyhammas, joka on 
 
 <input type="submit" value="Lähetä" onclick="lomake()">
 </form>
-<div class="vastaus">
+<div class="vastaus col-md-4">
   <div id="vastaus"></div>
 </div>
 </div>

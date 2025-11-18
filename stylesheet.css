@@ -132,11 +132,30 @@ body p{
 }
 
 /*lomake*/
-.lomake {
-  margin-left: 10%;
+.formi {
   margin-top: 40px;
+  align-content: center;
 }
-
+.lomake {
+  
+  border-style: solid;
+  border-radius: 30%;
+  border-color: #2356c5cf;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color:#9ee5f8;
+  color:#06264a;
+}
+#lomakkeenOtsikko {
+  text-align: center;
+}
+.vastaus {
+  border-style: solid;
+  border-color:#2356c5cf;
+  background-color: #9ee5f8;
+  border-radius: 30%;
+}
 
 /*fontit*/
 
