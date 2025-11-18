@@ -23,7 +23,7 @@ body p{
  margin-right: 2rem;
 }
 .navbar-custom {
-    background-color: rgb(41, 14, 162 );
+    background-color: #093f7e;
 }
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text{
@@ -60,25 +60,87 @@ body p{
             
         }
 
+  [id] {
+  scroll-margin-top: 100px;  /* säädä tarpeen mukaan */
+}
+
 /*karusellin leveys*/
 .carousel {
     width: 70%;
     margin:auto;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+   
+    
 }
 .carousel-caption {
     background-color: rgba(223, 224, 228, 0.8);
-    color:darkblue
+    color:darkblue;
+    padding-right: 10px;
+    padding-left: 10px;
 }
+
 /*grid asetukset*/
 .container .col-md-4 img{
     width: 100%;
+    border-radius: 50%;
+}
+.container .col-md-4 {
+  padding-bottom: 40px;
+  margin: auto;
+  text-align: center;
+  
 }
 #kuva2 {
     margin-right:0;
+}
+.container {
+  background-color: aliceblue;
+
+}
+/*kortit*/
+
+.card {
+  text-align: center;
+  
+}
+.card-group {
+  padding-bottom: 40px;
+  
+}
+/*haitari*/
+.accordion {
+  width: 80%;
+  margin: auto;
+}
+.accordion-button {
+  background-color: #0a69ac;
+  color: aliceblue;
+  
+}
+.haitariteksti {
+  width: 100%;
+  flex: 1;
+}
+.accordion-body img {
+  width: 20%;
+  flex: 2;
+  
+}
+.accordion-body {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+
+}
+/*lomake*/
+.lomake {
+  margin-left: 10%;
+  margin-top: 40px;
+}
+
 
 /*fontit*/
-}
+
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;

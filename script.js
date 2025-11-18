@@ -27,3 +27,20 @@ function lomake() {
     document.getElementById("vastaus").innerHTML="Hei "+nimi+",<br> sähköpostiosoitteesi on " +sposti+ ".<br>" +muuttuja + ".<br>"+ muuttuja2+ ".<br>" + valinta;
 
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll('.dropdown-menu a[href^="#"]');
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      const targetId = this.getAttribute("href");
+      const target = document.querySelector(targetId);
+
+      // Avaa accordion vain jos kohde on haitarin collapse-osio
+      if (target && target.classList.contains("collapse")) {
+        const collapse = new bootstrap.Collapse(target, {
+          toggle: true
+        });
+      }
+    });
+  });
+});
