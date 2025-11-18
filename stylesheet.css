@@ -118,6 +118,18 @@ body p{
   
 }
 
+/*välilehdet*/
+.nav-tabs {
+  margin-top: 40px;
+  
+
+}
+/*taulukko*/
+
+#taulukko {
+  padding-top: 40px;
+  background-color:aliceblue;
+}
 
 /*lomake*/
 .lomake {
