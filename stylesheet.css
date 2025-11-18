@@ -134,13 +134,16 @@ body p{
 /*lomake*/
 .formi {
   margin-top: 40px;
-  align-content: center;
+ 
+}
+.grid {
+ justify-content: center;
 }
 .lomake {
   
   border-style: solid;
-  border-radius: 30%;
-  border-color: #2356c5cf;
+  border-radius: 20%;
+  border-color: #446dc4cf;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -151,10 +154,13 @@ body p{
   text-align: center;
 }
 .vastaus {
-  border-style: solid;
-  border-color:#2356c5cf;
-  background-color: #9ee5f8;
-  border-radius: 30%;
+  border-style:inset;
+  border-color:#446dc4cf;
+  background-color: #a5e5f7;
+  border-radius: 20%;
+  color:#06264a;
+  text-align: center;
+  
 }
 
 /*fontit*/
@@ -205,64 +211,4 @@ body p{
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
 }

@@ -261,8 +261,8 @@ Sarvivalaan näkyvin tuntomerkki on koiraiden kierteinen syöksyhammas, joka on 
 <!--Palautelomake-->
 <div class="formi container-fluid">
   <h2 id="lomakkeenOtsikko">Anna palautetta sivustosta</h2>
-<div class="poppins-regular row">
-  <form onsubmit="return false" class="col-md-4 lomake">
+<div class="poppins-regular row grid">
+  <form onsubmit="return false" class="col-md-4 lomake m-4">
   <label for ="nimi">Nimi:</label><br>
 <input type="text" id="nimi" size="20" required maxlength="50"><br>
 <label for="email">Sähköposti:</label><br>
@@ -306,7 +306,7 @@ Sarvivalaan näkyvin tuntomerkki on koiraiden kierteinen syöksyhammas, joka on 
 
 <input type="submit" value="Lähetä" onclick="lomake()">
 </form>
-<div class="vastaus col-md-4">
+<div class="vastaus col-md-4 m-4 align-items-center d-flex justify-content-center">
   <div id="vastaus"></div>
 </div>
 </div>
