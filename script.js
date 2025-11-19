@@ -24,7 +24,7 @@ function lomake() {
     }
     valinta += valikonValinta[valikko].text;
 
-    document.getElementById("vastaus").innerHTML="Hei "+nimi+",<br> sähköpostiosoitteesi on " +sposti+ ".<br>" +muuttuja + ".<br>"+ muuttuja2+ ".<br>" + valinta;
+    document.getElementById("vastaus").innerHTML="Hei "+nimi+",<br> Sähköpostiosoitteesi on " +sposti+ ".<br>" +muuttuja + ".<br>"+ muuttuja2+ ".<br>" + valinta;
 
 }
 document.addEventListener("DOMContentLoaded", function () {

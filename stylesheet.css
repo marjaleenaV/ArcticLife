@@ -6,7 +6,6 @@ body p{
     font-family: Verdana;
     margin-bottom: 20px;
     position: relative; 
-    padding-top: 140px;
 }
 .navbar-brand img {
   height: 50px;           /* pienennä korkeutta */
@@ -70,7 +69,7 @@ body p{
     width: 70%;
     margin:auto;
     padding-bottom: 40px;
-    margin-top: 80px
+    margin-top: 90px;
    
     
 }
@@ -79,6 +78,9 @@ body p{
     color:darkblue;
     padding-right: 10px;
     padding-left: 10px;
+    max-height: 30%;
+   
+    
 }
 
 /*grid asetukset*/
@@ -211,4 +213,28 @@ body p{
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
+}
+@media(max-width: 768px) {
+  .carousel-caption {
+    max-width: 90%;
+    font-size: 0.7rem;
+    
+    padding-top: 5px;
+  }
+  .carousel {
+    width: 100%;
+  }
+  .carousel-caption h3 {
+    font-size: 0.9rem;
+    
+  }
+  .kuvaaja {
+    font-size: 0.5rem;
+    margin-top: 0.3rem;
+    
+  }
+  .carousel-caption p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
