@@ -133,6 +133,7 @@ body p{
 #taulukko {
   padding-top: 40px;
   background-color:aliceblue;
+  text-align: center;
 }
 
 /*lomake*/
@@ -144,7 +145,7 @@ body p{
 .lomake {
   
   border-style: solid;
-  border-radius: 20%;
+  border-radius: 20px;
   border-color: #446dc4cf;
   text-align: center;
   padding-top: 10px;
@@ -156,13 +157,12 @@ body p{
   text-align: center;
 }
 .vastaus {
-  border-style:inset;
-  border-color:#446dc4cf;
-  background-color: #a5e5f7;
-  border-radius: 20%;
-  color:#06264a;
+  
   text-align: center;
   
+}
+.loppuLogo {
+  width: 80%;
 }
 
 /*fontit*/
@@ -236,5 +236,8 @@ body p{
   .carousel-caption p {
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .placeholder-box {
+    min-height: 50px;
   }
 }
