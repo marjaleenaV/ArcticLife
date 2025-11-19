@@ -5,6 +5,7 @@ function lomake() {
     let boxit = document.getElementsByName("tama");
    let valikko = document.getElementById("tieto").selectedIndex;
     let valikonValinta = document.getElementById("tieto").options;
+    let viesti = document.getElementById("viesti").value;
     
     let muuttuja = "Toivoisit lisää: ";
     let muuttuja2 = "Ajattelet sivusta: ";
@@ -18,13 +19,13 @@ function lomake() {
     }
     for (let i = 0, length = boxit.length; i < length; i++) {
         if (boxit[i].checked) {
-            muuttuja2 += boxit[i].value +",";
+            muuttuja2 += boxit[i].value +", ";
         
         }
     }
     valinta += valikonValinta[valikko].text;
 
-    document.getElementById("vastaus").innerHTML="Hei "+nimi+",<br> Sähköpostiosoitteesi on " +sposti+ ".<br>" +muuttuja + ".<br>"+ muuttuja2+ ".<br>" + valinta;
+    document.getElementById("vastaus").innerHTML="Hei "+nimi+",<br> Sähköpostiosoitteesi on " +sposti+ "<br>" +muuttuja + "<br>"+ muuttuja2+ "<br>" + valinta + "<br>Viestisi: " + viesti;
 
 }
 document.addEventListener("DOMContentLoaded", function () {
