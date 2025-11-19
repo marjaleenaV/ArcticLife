@@ -26,7 +26,6 @@ function lomake() {
     valinta += valikonValinta[valikko].text;
 
     document.getElementById("vastaus").innerHTML="Hei "+nimi+",<br> Sähköpostiosoitteesi on " +sposti+ "<br>" +muuttuja + "<br>"+ muuttuja2+ "<br>" + valinta + "<br>Viestisi: " + viesti;
-
 }
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll('.dropdown-menu a[href^="#"]');
